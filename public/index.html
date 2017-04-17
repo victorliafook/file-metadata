@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>File Metadata Microservice</title>
+    <meta name="description" content="File Metadata Microservice">
+    <meta name="author" content="victorliafook at gmail dot com">
+    <!-- mobile first! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap's Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Bootstrap's Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4>Submit a file to view its filesize</h4>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-inline" action="/get-file-size" method="POST" enctype="multipart/form-data">
+                    
+                            <div class="form-group">
+                                <label for="fileupload">File*:</label>
+                                <input type="file" name="file" class="form-control" id="fileupload">
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                            
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+
+</html>
